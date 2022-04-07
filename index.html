@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brick-Breaker</title>
+    <meta charset="UTF-8" />
+    <style>
+      #gameWindow {
+        border: 1px solid black;
+        position: fixed;
+      }
+
+      #img_Ball {
+        display: none;
+      }
+
+      #img_Brick {
+        display: none;
+      }
+
+      #img_Arrow {
+        float: right;
+        width: 10%;
+        height: 100px;
+        margin-right: 360px;
+      }
+
+      #arrow_keys {
+        font-family: monospace;
+        text-align: right;
+        font-size: 25px;
+        margin-right: 110px;
+      }
+
+      #esc_key {
+        float: right;
+        width: 10%;
+        height: 75px;
+        margin-right: 0px;
+      }
+
+      #form {
+        float: right;
+        margin-right: 450px;
+      }
+
+      #speed {
+        font-family: monospace;
+        text-align: right;
+        font-size: 25px;
+      }
+
+      #lives {
+        font-family: monospace;
+        text-align: right;
+        font-size: 25px;
+        color: red;
+        margin-right: 230px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <img id="img_Ball" src="assets/images/ball.png" />
+    <img id="img_Brick" src="assets/images/brick.png" />
+
+    <p id="arrow_keys">-Use Arrow Keys to control the paddle</p>
+    <img id="img_Arrow" src="assets/images/arrow.png" />
+    <br />
+    <br />
+    <br />
+
+    <canvas id="gameWindow" width="800" height="600"></canvas>
+    <br />
+    <br />
+    <p id="lives">-Remember! You have 3 lives.</p>
+    <!--
+    <p id="speed">-You can increase the speed of the ball here:</p>
+    <form id="form">
+      <label for="fname">Speed:</label><br />
+      <input type="number" id="quantity" name="quantity" /><br />
+    </form>
+  -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
